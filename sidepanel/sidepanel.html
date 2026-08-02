@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat with this Page</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+  <header class="header">
+    <span class="header-title">Chat with this Page</span>
+    <span class="header-status" id="status-dot" title="Not connected"></span>
+  </header>
+
+  <main class="chat-window" id="chat-window">
+    <div class="message bot">
+      👋 Hi! I'll be able to answer questions about this page once the backend is connected (coming Day 4-5).
+    </div>
+  </main>
+
+  <details class="dev-tools">
+    <summary>🔧 Dev Tools</summary>
+    <button id="test-extract-btn">Test: Extract this page's text</button>
+  </details>
+
+  <footer class="input-bar">
+    <input
+      type="text"
+      id="chat-input"
+      placeholder="Ask something about this page..."
+      autocomplete="off"
+    />
+    <button id="send-btn">Send</button>
+  </footer>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
